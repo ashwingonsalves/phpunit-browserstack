@@ -10,7 +10,7 @@ class SingleTest extends BrowserStackTest {
         $element->sendKeys("BrowserStack");
         $element->submit();
         self::$driver->wait(10, 500)->until(function($driver) {
-          $elements = $driver->findElements(WebDriverBy::id("resultStats"));
+          $elements = $driver->findElements(WebDriverBy::id("rso"));
           return count($elements) > 0;
         });
         $this->assertEquals('BrowserStack - Google Search', self::$driver->getTitle());
