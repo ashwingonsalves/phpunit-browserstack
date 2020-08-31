@@ -4,18 +4,31 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "phpunit-browserstack",
+    "project": "PHPUnit Samples",
+    "build": "BrowserStack PHPUnit Samples v1",
     "name": "parallel_test",
     "browserstack.debug": true
   },
 
   "environments": [{
-    "browser": "chrome"
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Chrome",
+    "browser_version": "latest"
   },{
-    "browser": "firefox"
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Firefox",
+    "browser_version": "latest"
   },{
-    "browser": "safari"
+    "os": "OS X",
+    "os_version": "Catalina",
+    "browser": "Safari",
+    "browser_version": "latest"
   },{
-    "browser": "internet explorer"
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Edge",
+    "browser_version": "latest"
   }]
 }
