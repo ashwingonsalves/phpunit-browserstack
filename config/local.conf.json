@@ -4,13 +4,17 @@
   "key": "BROWSERSTACK_ACCESS_KEY",
 
   "capabilities": {
-    "build": "phpunit-browserstack",
+    "project": "PHPUnit Samples",
+    "build": "BrowserStack PHPUnit Samples v1",
     "name": "local_test",
     "browserstack.debug": true,
     "browserstack.local": true
   },
 
   "environments": [{
-    "browser": "chrome"
+    "os": "Windows",
+    "os_version": "10",
+    "browser": "Chrome",
+    "browser_version": "latest"
   }]
 }
