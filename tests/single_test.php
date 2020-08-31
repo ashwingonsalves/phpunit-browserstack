@@ -1,5 +1,6 @@
 <?php
 require 'vendor/autoload.php';
+use Facebook\WebDriver\WebDriverBy;
 
 class SingleTest extends BrowserStackTest {
 
