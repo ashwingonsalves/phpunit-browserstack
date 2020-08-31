@@ -1,8 +1,8 @@
 {
   "require": {
-    "browserstack/browserstack-local": "dev-master",
-    "phpunit/phpunit-selenium": "*",
-    "facebook/webdriver": "dev-master"
+    "phpunit/phpunit": "^8",
+    "php-webdriver/webdriver": "^1.8",
+    "browserstack/browserstack-local": "^1.1"
   },
   "scripts": {
     "test": "composer single && composer local && composer parallel",
