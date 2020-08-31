@@ -10,7 +10,7 @@ class BrowserStackTest extends PHPUnit\Framework\TestCase
     protected static $driver;
     protected static $bs_local;
 
-    public static function setUpBeforeClass()
+    public static function setUpBeforeClass(): void
     {
         $CONFIG = $GLOBALS['CONFIG'];
         $task_id = getenv('TASK_ID') ? getenv('TASK_ID') : 0;
@@ -33,7 +33,7 @@ class BrowserStackTest extends PHPUnit\Framework\TestCase
         self::$driver = RemoteWebDriver::create($url, $caps);
     }
 
-    public static function tearDownAfterClass()
+    public static function tearDownAfterClass(): void
     {
         self::$driver->quit();
         if(self::$bs_local) self::$bs_local->stop();
